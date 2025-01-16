@@ -39,3 +39,31 @@ def t04division(inputA, inputB):
     if( a == 0 or b == 0):
         return "divied by 0"
     return a//b, a/b
+
+def t05loops(input):
+    n = int(input)
+    if(n <= 1 or n >= 20):
+        return "out of range"
+    list = [] 
+    for i in range(0,n):
+        list.append(i**2)
+    return list
+
+def t06function(year):
+    if year <= 1900 or year >= 10**5:
+        return False
+    if year%400 == 0:
+        return True
+    if year%4 == 0 and year%100 != 0:
+        return True
+    return False
+
+def t07printFunction(input):
+    n = int(input)
+    if(n <= 1 or n >= 150):
+        return "out of range"
+    list = []
+    for i in range(1, n+1):
+        #print(i, end='')
+        list.append(i)
+    return list

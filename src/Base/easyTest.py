@@ -23,6 +23,18 @@ class TestBaseEasy(unittest.TestCase):
         self.assertEqual(t04division(4, 3), (1, 1.3333333333333333))
         self.assertEqual(t04division(0, 5), "divied by 0")
 
+    def test_t05(self):
+        self.assertEqual(t05loops(5), [0,1,4,9,16])
+        self.assertEqual(t05loops(90), "out of range")
+
+    def test_t06(self):
+        self.assertTrue(t06function(2024))
+        self.assertFalse(t06function(2025))
+        self.assertFalse(t06function(1900))
+
+    def test_t07(self):
+        self.assertEqual(t07printFunction(5), [1,2,3,4,5])
+        self.assertEqual(t07printFunction(155),  "out of range")
 
 
 if __name__ == '__main__':
